@@ -1,5 +1,5 @@
 import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
-import section3doc from "../assets/c1c3607d6d81eae2875a9befaeef2deb.jpeg";
+import section3doc from "../assets/Rectangle 320.png";
 import section3pink from "../assets/0a1202a5aa18b957d0ac414e132e8ae0.png";
 import section3white from "../assets/1b7136ac26ae9bf1160ebfdcb8597fff.png";
 import { ChevronRightIcon } from "@chakra-ui/icons";
