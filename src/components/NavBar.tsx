@@ -8,7 +8,6 @@ import {
   HStack,
   Heading,
   IconButton,
-  Text,
   VStack,
 } from "@chakra-ui/react";
 import { useState } from "react";
@@ -22,7 +21,7 @@ export default function NavBar() {
   };
 
   return (
-    <Flex>
+    <Flex position={"relative"}>
       <Container
         display={["none", "none", "flex", "flex"]}
         minW={"100%"}
@@ -38,16 +37,7 @@ export default function NavBar() {
           alignItems={"flex-start"}
           justifyContent={"flex-start"}
         >
-          <Heading
-            alignSelf={"center"}
-            m=" 30px 44px 29px 136px"
-            lineHeight="32px"
-            fontSize={24}
-            fontWeight={700}
-            letterSpacing={0.1}
-          >
-            MedicalGenuin
-          </Heading>
+          <Heading variant={"nav"}>MedicalGenuin</Heading>
           <Flex
             w={"100%"}
             flexDir={"row"}
@@ -56,7 +46,7 @@ export default function NavBar() {
             alignItems={"flex-start"}
             justifyContent={"flex-end"}
           >
-            <Flex direction={"row"}>
+            <Flex direction={"row"} w={"100%"}>
               <Box
                 m=" 33px 0px 34px 44px"
                 fontSize={14}
@@ -94,7 +84,7 @@ export default function NavBar() {
                 Contact
               </Box>
             </Flex>
-            <HStack alignSelf={"flex-end"}>
+            <HStack alignSelf={"flex-end"} w={"100%"}>
               <Button
                 fontSize={14}
                 fontWeight={700}
@@ -155,7 +145,7 @@ export default function NavBar() {
         <VStack
           bgColor={"#96bb7c2d"}
           w={"100vw"}
-          h={"100vh"}
+          h={"100%"}
           mt={79}
           display={MenuDisplay}
           alignItems={"center"}
@@ -208,16 +198,15 @@ export default function NavBar() {
             </Button>
           </Box>
           <Box h={"20"}>
-            <Button
+            <Box
               fontSize={14}
               fontWeight={700}
               lineHeight={"22px"}
               letterSpacing={0.2}
-              rightIcon={<ArrowForwardIcon />}
               backgroundColor={"#96BB7C"}
             >
-              JOIN US{" "}
-            </Button>
+              JOIN US <ArrowForwardIcon />
+            </Box>
           </Box>
         </VStack>
       </Flex>

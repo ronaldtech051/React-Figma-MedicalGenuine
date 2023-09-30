@@ -1,4 +1,4 @@
-import { Flex, Text } from "@chakra-ui/react";
+import { Flex, Text, Heading } from "@chakra-ui/react";
 import React from "react";
 
 export default function StatsLayout() {
@@ -19,23 +19,14 @@ export default function StatsLayout() {
             alignItems={"center"}
           >
             <Text
-              fontSize={"58px"}
+              fontSize={"7xl"}
               fontWeight={700}
               lineHeight={"80px"}
-              letterSpacing={0.2}
-              color={"#96BB7C"}
+              variant={"green"}
             >
               15K
             </Text>
-            <Text
-              fontSize={"16px"}
-              fontWeight={700}
-              lineHeight={"24px"}
-              letterSpacing={0.1}
-              color={"#FFFFFF"}
-            >
-              Happy Customer
-            </Text>
+            <Text fontWeight={700}>Happy Customer</Text>
           </Flex>
           <Flex
             className="flex-item"
@@ -44,23 +35,14 @@ export default function StatsLayout() {
             alignItems={"center"}
           >
             <Text
-              fontSize={"58px"}
+              fontSize={"7xl"}
               fontWeight={700}
               lineHeight={"80px"}
-              letterSpacing={0.2}
-              color={"#96BB7C"}
+              variant={"green"}
             >
               150K
             </Text>
-            <Text
-              fontSize={"16px"}
-              fontWeight={700}
-              lineHeight={"24px"}
-              letterSpacing={0.1}
-              color={"#FFFFFF"}
-            >
-              Monthly Visitors
-            </Text>
+            <Text fontWeight={700}>Monthly Visitors</Text>
           </Flex>
           <Flex
             className="flex-item"
@@ -69,23 +51,14 @@ export default function StatsLayout() {
             alignItems={"center"}
           >
             <Text
-              fontSize={"58px"}
+              fontSize={"7xl"}
               fontWeight={700}
               lineHeight={"80px"}
-              letterSpacing={0.2}
-              color={"#96BB7C"}
+              variant={"green"}
             >
               15
             </Text>
-            <Text
-              fontSize={"16px"}
-              fontWeight={700}
-              lineHeight={"24px"}
-              letterSpacing={0.1}
-              color={"#FFFFFF"}
-            >
-              Countries Worlwide
-            </Text>
+            <Text fontWeight={700}>Countries Worlwide</Text>
           </Flex>
           <Flex
             className="flex-item"
@@ -94,23 +67,14 @@ export default function StatsLayout() {
             alignItems={"center"}
           >
             <Text
-              fontSize={"58px"}
+              fontSize={"7xl"}
               fontWeight={700}
               lineHeight={"80px"}
-              letterSpacing={0.2}
-              color={"#96BB7C"}
+              variant={"green"}
             >
               100+
             </Text>
-            <Text
-              fontSize={"16px"}
-              fontWeight={700}
-              lineHeight={"24px"}
-              letterSpacing={0.1}
-              color={"#FFFFFF"}
-            >
-              Top Partners
-            </Text>
+            <Text fontWeight={700}>Top Partners</Text>
           </Flex>
         </Flex>
       </Flex>

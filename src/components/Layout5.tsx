@@ -32,31 +32,11 @@ export default function Layout5() {
           flexDir={"column"}
           alignItems={"flex-start"}
           justifyContent={"flex-start"}
+          gap={"10px"}
         >
-          {" "}
-          <Text
-            color={"#96BB7C"}
-            fontSize={"14px"}
-            fontWeight={400}
-            lineHeight={"24px"}
-            letterSpacing={0.2}
-          >
-            Practice Advice
-          </Text>
-          <Heading
-            fontSize={"40px"}
-            fontWeight={700}
-            lineHeight={"50px"}
-            letterSpacing={0.2}
-          >
-            Our Department
-          </Heading>
-          <Text
-            fontSize={"14px"}
-            fontWeight={400}
-            lineHeight={"20px"}
-            letterSpacing={0.2}
-          >
+          <Text variant={"green"}>Practice Advice</Text>
+          <Heading>Our Department</Heading>
+          <Text>
             Problems trying to resolve the conflict between the two major realms
             of Classical physics: Newtonian mechanics{" "}
           </Text>
@@ -127,15 +107,7 @@ export default function Layout5() {
                 >
                   FREE
                 </Heading>
-                <Text
-                  color={"#737373"}
-                  fontSize={"14px"}
-                  fontWeight={400}
-                  lineHeight={"24px"}
-                  letterSpacing={0.2}
-                >
-                  Organize across all apps by hand
-                </Text>
+                <Text variant={"grey"}>Organize across all apps by hand</Text>
                 <Heading
                   color={"#96BB7C"}
                   fontSize={"40px"}
@@ -145,23 +117,8 @@ export default function Layout5() {
                 >
                   19$
                 </Heading>
-                <Text
-                  color={"#8EC2F2"}
-                  fontSize={"14px"}
-                  fontWeight={400}
-                  lineHeight={"20px"}
-                  letterSpacing={0.2}
-                >
-                  Per Month
-                </Text>
-                <Text
-                  color={"#737373"}
-                  fontSize={"14px"}
-                  fontWeight={400}
-                  lineHeight={"24px"}
-                  letterSpacing={0.2}
-                  textAlign={"center"}
-                >
+                <Text color={"#8EC2F2"}>Per Month</Text>
+                <Text variant={"grey"}>
                   Slate helps you see how many more days you need...
                 </Text>
                 <Button
@@ -261,15 +218,7 @@ export default function Layout5() {
                 >
                   FREE
                 </Heading>
-                <Text
-                  color={"#fff"}
-                  fontSize={"14px"}
-                  fontWeight={400}
-                  lineHeight={"24px"}
-                  letterSpacing={0.2}
-                >
-                  Organize across all apps by hand
-                </Text>
+                <Text>Organize across all apps by hand</Text>
                 <Heading
                   color={"#fff"}
                   fontSize={"40px"}
@@ -279,25 +228,8 @@ export default function Layout5() {
                 >
                   19$
                 </Heading>
-                <Text
-                  color={"#8EC2F2"}
-                  fontSize={"14px"}
-                  fontWeight={400}
-                  lineHeight={"20px"}
-                  letterSpacing={0.2}
-                >
-                  Per Month
-                </Text>
-                <Text
-                  color={"#fff"}
-                  fontSize={"14px"}
-                  fontWeight={400}
-                  lineHeight={"24px"}
-                  letterSpacing={0.2}
-                  textAlign={"center"}
-                >
-                  Slate helps you see how many more days you need...
-                </Text>
+                <Text color={"#8EC2F2"}>Per Month</Text>
+                <Text>Slate helps you see how many more days you need...</Text>
                 <Button
                   p={"15px 40px"}
                   alignItems={"center"}
@@ -311,7 +243,7 @@ export default function Layout5() {
                 </Button>
                 <Box>
                   <List spacing={3}>
-                    <ListItem color={"fff"}>
+                    <ListItem color={"#fff"}>
                       <ListIcon as={MdCheckCircle} color="green.500" />
                       Unlimited product updates
                     </ListItem>
@@ -406,41 +338,10 @@ export default function Layout5() {
                 >
                   FREE
                 </Heading>
-                <Text
-                  color={"#737373"}
-                  fontSize={"14px"}
-                  fontWeight={400}
-                  lineHeight={"24px"}
-                  letterSpacing={0.2}
-                >
-                  Organize across all apps by hand
-                </Text>
-                <Heading
-                  color={"#96BB7C"}
-                  fontSize={"40px"}
-                  fontWeight={700}
-                  lineHeight={"50px"}
-                  letterSpacing={0.2}
-                >
-                  19$
-                </Heading>
-                <Text
-                  color={"#8EC2F2"}
-                  fontSize={"14px"}
-                  fontWeight={400}
-                  lineHeight={"20px"}
-                  letterSpacing={0.2}
-                >
-                  Per Month
-                </Text>
-                <Text
-                  color={"#737373"}
-                  fontSize={"14px"}
-                  fontWeight={400}
-                  lineHeight={"24px"}
-                  letterSpacing={0.2}
-                  textAlign={"center"}
-                >
+                <Text variant={"grey"}>Organize across all apps by hand</Text>
+                <Heading variant={"green"}>19$</Heading>
+                <Text color={"#8EC2F2"}>Per Month</Text>
+                <Text variant={"grey"}>
                   Slate helps you see how many more days you need...
                 </Text>
                 <Button

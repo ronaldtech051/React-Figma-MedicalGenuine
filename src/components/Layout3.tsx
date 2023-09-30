@@ -89,22 +89,11 @@ export default function Layout3() {
             >
               Meet Our Experts
             </Heading>
-            <Text
-              fontSize={"14px"}
-              fontWeight={400}
-              lineHeight={"20px"}
-              letterSpacing={0.2}
-            >
+            <Text lineHeight={"20px"}>
               Problems trying to resolve the conflict between the two major
               realms of Classical physics: Newtonian mechanics{" "}
             </Text>{" "}
-            <Text
-              color={"#96BB7C"}
-              fontSize={"14px"}
-              fontWeight={400}
-              lineHeight={"24px"}
-              letterSpacing={0.2}
-            >
+            <Text variant={"green"}>
               Learn more <ChevronRightIcon />
             </Text>
           </Flex>
