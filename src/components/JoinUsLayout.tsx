@@ -13,7 +13,7 @@ export default function JoinUsLayout() {
   return (
     <Flex
       className="container"
-      p={"0px 195px 2px 195px"}
+      p={["0px 10px", "0px 10px", "0px 10px", "0px 195px"]}
       justifyContent={"center"}
       alignItems={"center"}
       bgColor={"#2D4059"}

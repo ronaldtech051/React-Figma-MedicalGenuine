@@ -23,14 +23,18 @@ export default function NavBar() {
   return (
     <Flex position={"relative"}>
       <Container
-        display={["none", "none", "flex", "flex"]}
+        display={{
+          base: "none",
+
+          xl: "flex",
+        }}
         minW={"100%"}
         maxH={"91px"}
         marginLeft={"59px"}
         marginRight={"59px"}
       >
         <Flex
-          flexDir={["column", "column", "row", "row"]}
+          flexDir={{ base: "column", sm: "column", md: "row", lg: "row" }}
           maxH={"91px"}
           width={"100%"}
           m={"0px 0px 0px 0px"}
@@ -48,37 +52,41 @@ export default function NavBar() {
           >
             <Flex direction={"row"} w={"100%"}>
               <Box
+                mt={4}
                 m=" 33px 0px 34px 44px"
-                fontSize={14}
+                fontSize={22}
                 fontWeight={700}
-                lineHeight={"24px"}
+                lineHeight={10}
                 letterSpacing={0.2}
               >
                 Home
               </Box>
               <Box
+                mt={4}
                 m=" 33px 0px 34px 21px"
-                fontSize={14}
+                fontSize={22}
                 fontWeight={700}
-                lineHeight={"24px"}
+                lineHeight={10}
                 letterSpacing={0.2}
               >
                 Product
               </Box>
               <Box
+                mt={4}
                 m=" 33px 0px 34px 21px"
-                fontSize={14}
+                fontSize={22}
                 fontWeight={700}
-                lineHeight={"24px"}
+                lineHeight={10}
                 letterSpacing={0.2}
               >
                 Pricing
               </Box>
               <Box
+                mt={4}
                 m=" 33px 0px 34px 21px"
-                fontSize={14}
+                fontSize={22}
                 fontWeight={700}
-                lineHeight={"24px"}
+                lineHeight={10}
                 letterSpacing={0.2}
               >
                 Contact
@@ -86,7 +94,7 @@ export default function NavBar() {
             </Flex>
             <HStack alignSelf={"flex-end"} w={"100%"}>
               <Button
-                fontSize={14}
+                fontSize={22}
                 fontWeight={700}
                 lineHeight={"22px"}
                 letterSpacing={0.2}
@@ -95,7 +103,7 @@ export default function NavBar() {
                 Login
               </Button>
               <Button
-                fontSize={14}
+                fontSize={22}
                 fontWeight={700}
                 lineHeight={"22px"}
                 letterSpacing={0.2}
@@ -111,11 +119,14 @@ export default function NavBar() {
       </Container>
       <Flex
         flexDir={"column"}
-        display={["flex", "flex", "none", "none"]}
+        display={{
+          base: "flex",
+          xl: "none",
+        }}
         alignItems={"center"}
         justify={"flex-start"}
         w={"100vw"}
-        h={"100vh"}
+        //h={"100vh"}
         mt={3}
       >
         <Flex
@@ -124,72 +135,76 @@ export default function NavBar() {
           justifyContent={"space-between"}
           alignItems={"center"}
         >
-          <Heading
-            m={2}
-            lineHeight="32px"
-            fontSize={24}
-            fontWeight={700}
-            letterSpacing={0.1}
-          >
+          <Heading m={2} lineHeight="32px" fontSize={22}>
             MedicalGenuin
           </Heading>
           <IconButton
-            m={2}
+            m={4}
             aria-label="Open Menu"
             size="lg"
-            icon={MenuDisplay === "none" ? <HamburgerIcon /> : <CloseButton />}
+            icon={
+              MenuDisplay === "none" ? (
+                <HamburgerIcon />
+              ) : (
+                <CloseButton size={"lg"} />
+              )
+            }
             alignSelf={"flex-end"}
             onClick={() => changer(MenuDisplay)}
           />
         </Flex>
         <VStack
+          className="responsive-nav"
           bgColor={"#96bb7c2d"}
           w={"100vw"}
           h={"100%"}
-          mt={79}
           display={MenuDisplay}
           alignItems={"center"}
           justify={"center"}
         >
           <Box
-            fontSize={14}
+            mt={4}
+            fontSize={22}
             fontWeight={700}
-            lineHeight={"24px"}
+            lineHeight={10}
             letterSpacing={0.2}
             h={"20"}
           >
             Home
           </Box>
           <Box
-            fontSize={14}
+            mt={4}
+            fontSize={22}
             fontWeight={700}
-            lineHeight={"24px"}
+            lineHeight={10}
             letterSpacing={0.2}
             h={"20"}
           >
             Product
           </Box>
           <Box
-            fontSize={14}
+            mt={4}
+            fontSize={22}
             fontWeight={700}
-            lineHeight={"24px"}
+            lineHeight={10}
             letterSpacing={0.2}
             h={"20"}
           >
             Pricing
           </Box>
           <Box
-            fontSize={14}
+            mt={4}
+            fontSize={22}
             fontWeight={700}
-            lineHeight={"24px"}
+            lineHeight={10}
             letterSpacing={0.2}
             h={"20"}
           >
             Contact
           </Box>
-          <Box h={"20"}>
+          <Box mt={4} h={"20"}>
             <Button
-              fontSize={14}
+              fontSize={22}
               fontWeight={700}
               lineHeight={"22px"}
               letterSpacing={0.2}
@@ -197,9 +212,10 @@ export default function NavBar() {
               Login
             </Button>
           </Box>
-          <Box h={"20"}>
+          <Box mt={4} h={"20"}>
             <Box
-              fontSize={14}
+              mt={4}
+              fontSize={22}
               fontWeight={700}
               lineHeight={"22px"}
               letterSpacing={0.2}

@@ -9,7 +9,7 @@ export default function Layout4() {
     <Flex
       className="department-layout"
       w={"100%"}
-      p={["0px 50%", "0px 50px", "0px 100px", "0px 195px"]}
+      p={{ base: "0px 30px 5px 30px", xl: "0px 195px 50.593px 195px" }}
       justifyContent={"center"}
       alignItems={"center"}
       bgColor={"#2D4059"}
@@ -186,7 +186,6 @@ export default function Layout4() {
                 gap={"10px"}
                 alignSelf={"stretch"}
                 bgColor={"#FFFFFF"}
-                flexShrink={0}
               >
                 <Flex
                   justifyContent={"space-between"}
@@ -241,6 +240,7 @@ export default function Layout4() {
                   lineHeight={"24px"}
                   letterSpacing={0.2}
                   gap={2}
+                  flexWrap={"nowrap"}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -445,6 +445,7 @@ export default function Layout4() {
                     p={"5px"}
                     alignItems={"center"}
                     gap={5}
+                    flexWrap={"nowrap"}
                     borderRadius={"20px"}
                     bgColor={"#2D4059"}
                   >
@@ -486,6 +487,7 @@ export default function Layout4() {
                   lineHeight={"24px"}
                   letterSpacing={0.2}
                   gap={2}
+                  flexWrap={"nowrap"}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -673,6 +675,7 @@ export default function Layout4() {
                 className="bot-card"
                 p={"25px 25px 35px 25px"}
                 flexDir={"column"}
+                wrap={"nowrap"}
                 alignItems={"flex-start"}
                 gap={"10px"}
                 alignSelf={"stretch"}
@@ -688,6 +691,7 @@ export default function Layout4() {
                     p={"5px"}
                     alignItems={"center"}
                     gap={5}
+                    flexWrap={"nowrap"}
                     borderRadius={"20px"}
                     bgColor={"#2D4059"}
                   >
@@ -729,6 +733,7 @@ export default function Layout4() {
                   lineHeight={"24px"}
                   letterSpacing={0.2}
                   gap={2}
+                  flexWrap={"nowrap"}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

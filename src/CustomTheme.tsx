@@ -1,6 +1,5 @@
 // 1. Import `extendTheme`
 import { extendTheme } from "@chakra-ui/react";
-import { Container } from "@chakra-ui/react";
 
 // 2. Call `extendTheme` and pass your custom values
 const theme = extendTheme({
@@ -8,7 +7,7 @@ const theme = extendTheme({
     Heading: {
       baseStyle: {
         fontWeight: "700",
-        fontSize: "4xl",
+        fontSize: "6xl",
         LineHeight: "50px",
         letterSpacing: "0.2px",
         height: "auto",
@@ -39,10 +38,10 @@ const theme = extendTheme({
     Text: {
       baseStyle: {
         color: "#ffffff",
-        fontSize: "14px",
+        fontSize: "xl",
         fontWeight: "400",
         lineHeight: "24px",
-        letterSpacing: "0.2",
+        letterSpacing: "0.2px",
       },
       variants: {
         green: {
@@ -55,20 +54,6 @@ const theme = extendTheme({
         grey: {
           color: "#737373",
           fontWeight: "400",
-        },
-      },
-    },
-    Flex: {
-      variants: {
-        Container: {
-          base: {
-            padding: "5px 95px",
-            w: "100%",
-            justifyContent: "center",
-            alignItems: "center",
-            bgColor: "#2D4059",
-          },
-          sm: {},
         },
       },
     },

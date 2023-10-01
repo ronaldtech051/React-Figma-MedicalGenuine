@@ -7,34 +7,31 @@ function Layout2() {
     <Flex
       className="bbb"
       position={"relative"}
-      m={"0px 0px 0px 0px"}
-      p={"0px 195px 0px 195px"}
+      m={0}
+      p={{ base: "0px 5px 5px 5px", xl: "0px 195px 50.593px 195px" }}
       bgColor={"#2D4059"}
       justify={"center"}
     >
       <Flex
-        p={"80px 0px"}
-        flexDir={"row"}
+        p={{ xl: "80px", base: "20px" }}
+        w={"100%"}
+        flexDir={{ base: "row", lg: "column" }}
         alignItems={"center"}
         justify={"center"}
-        flexShrink={0}
       >
-        <Flex alignItems={"center"} gap={"30px"}>
+        <Flex
+          alignItems={"center"}
+          gap={"30px"}
+          flexDir={{ base: "column", xl: "row" }}
+        >
           <Flex
-            w={"507px"}
+            w={{ base: "100%", xl: "40%" }}
             flexDir={"column"}
             alignItems={"flex-start"}
-            gap={"35px"}
+            gap={2}
           >
             <Box bgColor={"#FF7171"} h={"7px"} w={"94px"}></Box>
-            <Heading
-              fontSize={"40px"}
-              fontWeight={700}
-              lineHeight={"50px"}
-              letterSpacing={0.2}
-            >
-              Our Doctors Specialize in you
-            </Heading>
+            <Heading>Our Doctors Specialize in you</Heading>
             <Text>
               Problems trying to resolve the conflict between the two major
               realms of Classical physics: Newtonian mechanics
@@ -43,11 +40,15 @@ function Layout2() {
               Learn more <ChevronRightIcon />
             </Text>
           </Flex>
-          <Flex alignItems={"center"} gap={"30px"}>
+          <Flex
+            alignItems={"center"}
+            gap={"30px"}
+            flexDir={{ base: "column", lg: "row" }}
+          >
             {" "}
             <Flex
-              w={"239px"}
-              h={"688.706px"}
+              w={"400px"}
+              h={{ base: "auto", xl: "688.706px" }}
               flexDir={"column"}
               alignItems={"flex-start"}
               gap={"24px"}
@@ -102,6 +103,7 @@ function Layout2() {
               </Flex>
               <Flex
                 className="card"
+                w={"400px"}
                 p={"35px 40px"}
                 flexDir={"column"}
                 alignItems={"flex-start"}
@@ -208,9 +210,9 @@ function Layout2() {
               </Flex>
             </Flex>
             <Flex
-              w={"239px"}
-              h={"688.706px"}
-              pt={"48px"}
+              w={"400px"}
+              h={{ base: "auto", xl: "688.706px" }}
+              pt={{ base: "auto", xl: "48px" }}
               flexDirection={"column"}
               justifyContent={"center"}
               alignItems={"center"}
@@ -219,6 +221,7 @@ function Layout2() {
               {" "}
               <Flex
                 className="card"
+                w={"400px"}
                 p={"35px 40px"}
                 flexDir={"column"}
                 alignItems={"flex-start"}

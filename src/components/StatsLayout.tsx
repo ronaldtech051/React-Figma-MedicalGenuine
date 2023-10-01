@@ -1,17 +1,27 @@
-import { Flex, Text, Heading } from "@chakra-ui/react";
-import React from "react";
+import { Flex, Text } from "@chakra-ui/react";
 
 export default function StatsLayout() {
   return (
     <Flex
-      p={"0px 195px"}
+      p={{ base: "0px 30px 5px 30px", xl: "0px 195px 50.593px 195px" }}
       w={"100%"}
       alignItems={"center"}
       justifyContent={"center"}
       alignSelf={"stretch"}
     >
-      <Flex p={"80px"} flexDir={"column"} alignItems={"center"} gap={"px"}>
-        <Flex className="stats-wrapper" alignItems={"center"} gap={"30px"}>
+      <Flex
+        p={{ base: "10px", xl: "80px" }}
+        flexDir={"column"}
+        alignItems={"center"}
+        gap={"50px"}
+      >
+        <Flex
+          className="stats-wrapper"
+          alignItems={"center"}
+          justify={"center"}
+          gap={"30px"}
+          wrap={"wrap"}
+        >
           <Flex
             className="flex-item"
             w={"238px"}

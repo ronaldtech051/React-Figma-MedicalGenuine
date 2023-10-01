@@ -14,7 +14,7 @@ export default function Layout5() {
   return (
     <Flex
       w={"100%"}
-      p={"0px 195px"}
+      p={{ base: "0px 30px 5px 30px", xl: "0px 195px 50.593px 195px" }}
       justifyContent={"center"}
       alignItems={"center"}
       bgColor={"#2D4059"}
@@ -41,8 +41,9 @@ export default function Layout5() {
             of Classical physics: Newtonian mechanics{" "}
           </Text>
         </Flex>
+
         <Flex
-          flexDir={"row"}
+          flexDir={{ base: "column", xl: "row" }}
           justifyContent={"space-around"}
           w={"100%"}
           p={"160px 0px"}
@@ -52,7 +53,7 @@ export default function Layout5() {
           <Flex
             className="card-wrapper"
             flexDir={"column"}
-            w={"328px"}
+            w={{ base: "100%", xl: "400px" }}
             alignItems={"center"}
           >
             <Flex
@@ -62,7 +63,7 @@ export default function Layout5() {
               boxShadow={"0px 13px 19px 0px rgba(0, 0, 0, 0.07);"}
               justifyContent={"flex-end"}
               alignItems={"center"}
-              w={"328px"}
+              w={{ base: "100%" }}
             >
               {" "}
               <Flex
@@ -98,15 +99,7 @@ export default function Layout5() {
                     />
                   </svg>
                 </Box>
-                <Heading
-                  color={"#252B42"}
-                  fontSize={"24px"}
-                  fontWeight={700}
-                  lineHeight={"32px"}
-                  letterSpacing={0.1}
-                >
-                  FREE
-                </Heading>
+                <Heading color={"#252B42"}>FREE</Heading>
                 <Text variant={"grey"}>Organize across all apps by hand</Text>
                 <Heading
                   color={"#96BB7C"}
@@ -134,23 +127,23 @@ export default function Layout5() {
                 </Button>
                 <Box>
                   <List spacing={3}>
-                    <ListItem color={"#252B42"}>
+                    <ListItem fontSize={"xl"} color={"#252B42"}>
                       <ListIcon as={MdCheckCircle} color="green.500" />
                       Unlimited product updates
                     </ListItem>
-                    <ListItem color={"#252B42"}>
+                    <ListItem fontSize={"xl"} color={"#252B42"}>
                       <ListIcon as={MdCheckCircle} color="green.500" />
                       Unlimited product updates
                     </ListItem>
-                    <ListItem color={"#252B42"}>
+                    <ListItem fontSize={"xl"} color={"#252B42"}>
                       <ListIcon as={MdCheckCircle} color="green.500" />
                       Unlimited product updates
                     </ListItem>
-                    <ListItem color={"#252B42"}>
+                    <ListItem fontSize={"xl"} color={"#252B42"}>
                       <ListIcon as={MdCheckCircle} color="grey.200" />
                       1GB Cloud storage
                     </ListItem>
-                    <ListItem color={"#252B42"}>
+                    <ListItem fontSize={"xl"} color={"#252B42"}>
                       <ListIcon as={MdCheckCircle} color="grey.200" />
                       email and community support
                     </ListItem>
@@ -162,7 +155,7 @@ export default function Layout5() {
           <Flex
             className="card-wrapper"
             flexDir={"column"}
-            w={"328px"}
+            w={{ base: "100%", xl: "400px" }}
             alignItems={"center"}
           >
             <Flex
@@ -173,7 +166,7 @@ export default function Layout5() {
               boxShadow={"0px 13px 19px 0px rgba(0, 0, 0, 0.07);"}
               justifyContent={"flex-end"}
               alignItems={"center"}
-              w={"328px"}
+              w={{ base: "100%" }}
             >
               {" "}
               <Flex
@@ -209,16 +202,10 @@ export default function Layout5() {
                     />
                   </svg>
                 </Box>
-                <Heading
-                  color={"#fff"}
-                  fontSize={"24px"}
-                  fontWeight={700}
-                  lineHeight={"32px"}
-                  letterSpacing={0.1}
-                >
-                  FREE
-                </Heading>
-                <Text>Organize across all apps by hand</Text>
+                <Heading>FREE</Heading>
+                <Text alignSelf={"center"}>
+                  Organize across all apps by hand
+                </Text>
                 <Heading
                   color={"#fff"}
                   fontSize={"40px"}
@@ -229,7 +216,9 @@ export default function Layout5() {
                   19$
                 </Heading>
                 <Text color={"#8EC2F2"}>Per Month</Text>
-                <Text>Slate helps you see how many more days you need...</Text>
+                <Text alignSelf={"center"}>
+                  Slate helps you see how many more days you need...
+                </Text>
                 <Button
                   p={"15px 40px"}
                   alignItems={"center"}
@@ -243,23 +232,23 @@ export default function Layout5() {
                 </Button>
                 <Box>
                   <List spacing={3}>
-                    <ListItem color={"#fff"}>
+                    <ListItem fontSize={"xl"} color={"#fff"}>
                       <ListIcon as={MdCheckCircle} color="green.500" />
                       Unlimited product updates
                     </ListItem>
-                    <ListItem color={"#fff"}>
+                    <ListItem fontSize={"xl"} color={"#fff"}>
                       <ListIcon as={MdCheckCircle} color="green.500" />
                       Unlimited product updates
                     </ListItem>
-                    <ListItem color={"#fff"}>
+                    <ListItem fontSize={"xl"} color={"#fff"}>
                       <ListIcon as={MdCheckCircle} color="green.500" />
                       Unlimited product updates
                     </ListItem>
-                    <ListItem color={"#fff"}>
+                    <ListItem fontSize={"xl"} color={"#fff"}>
                       <ListIcon as={MdCheckCircle} color="grey.200" />
                       1GB Cloud storage
                     </ListItem>
-                    <ListItem color={"#fff"}>
+                    <ListItem fontSize={"xl"} color={"#fff"}>
                       <ListIcon as={MdCheckCircle} color="grey.200" />
                       email and community support
                     </ListItem>
@@ -271,7 +260,7 @@ export default function Layout5() {
           <Flex
             className="card-wrapper"
             flexDir={"column"}
-            w={"328px"}
+            w={{ base: "100%", xl: "400px" }}
             alignItems={"center"}
           >
             <Flex
@@ -281,21 +270,8 @@ export default function Layout5() {
               boxShadow={"0px 13px 19px 0px rgba(0, 0, 0, 0.07);"}
               justifyContent={"flex-start"}
               alignItems={"center"}
-              w={"328px"}
+              w={{ base: "100%" }}
             >
-              <Box
-                position={"absolute"}
-                display={"inline-flex"}
-                m={"0px 0px 888px 304px"}
-                p={"29px 16px"}
-                flexDir={"column"}
-                gap={"10px"}
-                bgColor={"#E77C40"}
-                color={"#fff"}
-                borderRadius={"52px"}
-              >
-                NEW
-              </Box>
               <Flex
                 className="inner-card"
                 borderRadius={"4px"}
@@ -306,7 +282,33 @@ export default function Layout5() {
                 gap={"35px"}
                 bgColor={"#fff"}
               >
-                {" "}
+                <Flex
+                  alignItems={"flex-end"}
+                  justifyContent={"center"}
+                  position={"absolute"}
+                  w={"100%"}
+                  overflowX={"hidden"}
+                  top={{ xl: "5000", base: "9220" }}
+                  className="new box"
+                >
+                  <Flex
+                    position={"relative"}
+                    display={"flex"}
+                    justify={"center"}
+                    align={"center"}
+                    p={"24px 16px"}
+                    zIndex={3}
+                    //top={2}
+                    left={{ base: "150px", xl: "190px" }}
+                    flexDir={"column"}
+                    gap={"10px"}
+                    bgColor={"#E77C40"}
+                    color={"#fff"}
+                    borderRadius={"50%"}
+                  >
+                    NEW
+                  </Flex>
+                </Flex>
                 <Box
                   w={"96px"}
                   height={"96px"}
@@ -329,17 +331,9 @@ export default function Layout5() {
                     />
                   </svg>
                 </Box>
-                <Heading
-                  color={"#252B42"}
-                  fontSize={"24px"}
-                  fontWeight={700}
-                  lineHeight={"32px"}
-                  letterSpacing={0.1}
-                >
-                  FREE
-                </Heading>
+                <Heading color={"#252B42"}>FREE</Heading>
                 <Text variant={"grey"}>Organize across all apps by hand</Text>
-                <Heading variant={"green"}>19$</Heading>
+                <Heading color={"#96BB7C"}>19$</Heading>
                 <Text color={"#8EC2F2"}>Per Month</Text>
                 <Text variant={"grey"}>
                   Slate helps you see how many more days you need...
@@ -357,23 +351,23 @@ export default function Layout5() {
                 </Button>
                 <Box>
                   <List spacing={3}>
-                    <ListItem color={"#252B42"}>
+                    <ListItem fontSize={"xl"} color={"#252B42"}>
                       <ListIcon as={MdCheckCircle} color="green.500" />
                       Unlimited product updates
                     </ListItem>
-                    <ListItem color={"#252B42"}>
+                    <ListItem fontSize={"xl"} color={"#252B42"}>
                       <ListIcon as={MdCheckCircle} color="green.500" />
                       Unlimited product updates
                     </ListItem>
-                    <ListItem color={"#252B42"}>
+                    <ListItem fontSize={"xl"} color={"#252B42"}>
                       <ListIcon as={MdCheckCircle} color="green.500" />
                       Unlimited product updates
                     </ListItem>
-                    <ListItem color={"#252B42"}>
+                    <ListItem fontSize={"xl"} color={"#252B42"}>
                       <ListIcon as={MdCheckCircle} color="grey.200" />
                       1GB Cloud storage
                     </ListItem>
-                    <ListItem color={"#252B42"}>
+                    <ListItem fontSize={"xl"} color={"#252B42"}>
                       <ListIcon as={MdCheckCircle} color="grey.200" />
                       email and community support
                     </ListItem>

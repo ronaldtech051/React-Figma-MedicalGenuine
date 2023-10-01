@@ -5,7 +5,7 @@ import avatar3 from "../assets/testimonial-avatar-3.png";
 export default function Testimonials() {
   return (
     <Flex
-      p={"0px 195px"}
+      p={{ base: "0px 30px 5px 30px", xl: "0px 195px 50.593px 195px" }}
       justifyContent={"center"}
       alignItems={"center"}
       bgColor={"#2D4059"}
@@ -35,7 +35,8 @@ export default function Testimonials() {
         </Flex>
         <Flex
           gap={"30px"}
-          flexDir={"row"}
+          flexDir={{ xl: "row" }}
+          wrap={"wrap"}
           alignItems={"flex-start"}
           justifyContent={"center"}
         >

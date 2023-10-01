@@ -7,7 +7,7 @@ export default function Layout3() {
   return (
     <Flex
       className="section3-container"
-      p={"0px 195px 50.593px 195px"}
+      p={{ base: "0px 5px 5px 5px", xl: "0px 195px 50.593px 195px" }}
       justifyContent={"center"}
       alignItems={"center"}
       bgColor={"#2D4059"}
@@ -15,23 +15,24 @@ export default function Layout3() {
       {" "}
       <Flex
         className="wrapper"
-        w={"1050px"}
+        w={"100%"}
         p={"160px 0px"}
         flexDir={"column"}
         alignItems={"flex-start"}
-        flexShrink={0}
       >
         <Flex
           className="row1"
           w={"100%"}
-          justifyContent={"space-between"}
+          flexDir={{ base: "column-reverse", xl: "row" }}
+          gap={40}
+          justifyContent={"space-around"}
           alignItems={"center"}
         >
           <Flex
             alignItems={"center"}
             gap={"30px"}
-            w={"507px"}
-            h={"342.407px"}
+            w={{ base: "auto", xl: "507px" }}
+            h={{ base: "auto", xl: "342.407px" }}
             position={"relative"}
           >
             <Box
@@ -74,7 +75,7 @@ export default function Layout3() {
             />
           </Flex>
           <Flex
-            w={"381px"}
+            w={{ base: "auto", xl: "507px" }}
             flexDir={"column"}
             alignItems={"flex-start"}
             gap={"35px"}

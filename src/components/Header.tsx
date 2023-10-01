@@ -1,10 +1,11 @@
-import { Container, Flex, Grid, Heading, Text } from "@chakra-ui/react";
+import { Container, Flex, Heading, Text } from "@chakra-ui/react";
 import herogb from "../assets/doc.jpg";
 import NavBar from "./NavBar";
 
 function Header() {
   return (
     <Container
+      className="hero-container"
       position={"relative"}
       overflowX={"hidden"}
       backgroundImage={herogb}
@@ -21,7 +22,8 @@ function Header() {
       sx={{ Tran: " rgba(0, 0, 0, 0.644); " }}
       flexShrink={0}
     >
-      <Grid
+      <Flex
+        flexDir={"column"}
         bg={"rgba(0, 0, 0, 0.50)"}
         overflowX={"hidden"}
         w={"100%"}
@@ -31,6 +33,7 @@ function Header() {
       >
         <NavBar />
         <Flex
+          position={"relative"}
           as={"section"}
           flexDir={"column"}
           m={[
@@ -39,7 +42,7 @@ function Header() {
             "0px 195px 7px 195px",
             "0px 195px 7px 195px",
           ]}
-          p={"112px 0px"}
+          p={["10px 0px", "0px 5px 112px 5px", "112px 0px", "112px 0px"]}
           alignItems={"center"}
           gap={"80px"}
         >
@@ -49,7 +52,7 @@ function Header() {
             We are always focused on helping your child and you
           </Heading>
         </Flex>
-      </Grid>
+      </Flex>
     </Container>
   );
 }
