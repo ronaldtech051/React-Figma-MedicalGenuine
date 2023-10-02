@@ -10,9 +10,11 @@ import Testimonials from "./components/Testimonials";
 import JoinUsLayout from "./components/JoinUsLayout";
 import Footer from "./components/Footer";
 import theme from "./CustomTheme";
+import NavBar from "./components/NavBar";
 
 export const App = () => (
   <ChakraProvider theme={theme}>
+    <NavBar />
     <Header />
     <div></div>
     <Layout2 />

@@ -116,12 +116,15 @@ export default function Layout5() {
                 </Text>
                 <Button
                   p={"15px 40px"}
+                  h={"100%"}
+                  size={"lg"}
                   alignItems={"center"}
                   justifyContent={"center"}
                   gap={"10px"}
                   alignSelf={"stretch"}
                   color={"#fff"}
                   bgColor={"#96BB7C"}
+                  _hover={{ color: "#96BB7C", bgColor: "#96bb7c2f" }}
                 >
                   Try For Free
                 </Button>
@@ -220,6 +223,8 @@ export default function Layout5() {
                   Slate helps you see how many more days you need...
                 </Text>
                 <Button
+                  h={"100%"}
+                  size={"lg"}
                   p={"15px 40px"}
                   alignItems={"center"}
                   justifyContent={"center"}
@@ -339,13 +344,16 @@ export default function Layout5() {
                   Slate helps you see how many more days you need...
                 </Text>
                 <Button
+                  size={"lg"}
                   p={"15px 40px"}
+                  h={"100%"}
                   alignItems={"center"}
                   justifyContent={"center"}
                   gap={"10px"}
                   alignSelf={"stretch"}
                   color={"#fff"}
                   bgColor={"#96BB7C"}
+                  _hover={{ color: "#96BB7C", bgColor: "#96bb7c2f" }}
                 >
                   Try For Free
                 </Button>

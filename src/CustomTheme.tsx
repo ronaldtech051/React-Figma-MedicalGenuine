@@ -7,29 +7,30 @@ const theme = extendTheme({
     Heading: {
       baseStyle: {
         fontWeight: "700",
-        fontSize: "6xl",
+        fontSize: "5xl",
         LineHeight: "50px",
         letterSpacing: "0.2px",
         height: "auto",
+        overflowY: "hidden",
         color: "#fff",
       },
       variants: {
         nav: {
-          alignSelf: "center",
-          w: "100%",
           lineHeight: "32px",
-          fontSize: "24",
+          fontSize: "4xl",
           letterSpacing: "0.1",
           m: "30px 44px 29px 136px",
         },
         "header-big": {
           LineHeight: "80px",
-          size: "4xl",
+
+          fontSize: "4xl",
           textAlign: "center",
         },
         "header-small": {
           LineHeight: "30px",
-          size: "md",
+          fontSize: "md",
+
           textAlign: "center",
           fontWeight: "400",
         },
@@ -38,8 +39,10 @@ const theme = extendTheme({
     Text: {
       baseStyle: {
         color: "#ffffff",
+        overflowY: "hidden",
         fontSize: "xl",
         fontWeight: "400",
+        height: "auto",
         lineHeight: "24px",
         letterSpacing: "0.2px",
       },

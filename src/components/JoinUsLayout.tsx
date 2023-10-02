@@ -41,7 +41,7 @@ export default function JoinUsLayout() {
             of Classical physics: Newtonian mechanics{" "}
           </Text>
         </Flex>
-        <Flex w={"688px"} h={"60px"}>
+        <Flex maxW={"688px"} h={"60px"} w={"100%"}>
           <InputGroup bgColor={"#fff"} h={"100%"} borderRadius={"8px"}>
             <Input
               h={"100%"}
@@ -52,7 +52,12 @@ export default function JoinUsLayout() {
               _placeholder={{ opacity: 1, color: "gray.500" }}
             />
             <InputRightElement w={"100px"} h={"100%"}>
-              <Button size={"lg"} bgColor={"#96BB7C"} h={"100%"}>
+              <Button
+                size={"lg"}
+                bgColor={"#96BB7C"}
+                h={"100%"}
+                _hover={{ color: "#96BB7C", bgColor: "#96bb7c2f" }}
+              >
                 Subscribe
               </Button>
             </InputRightElement>

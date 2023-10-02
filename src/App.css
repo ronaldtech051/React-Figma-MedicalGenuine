@@ -1,8 +1,8 @@
 html {
   overflow-x: hidden;
 }
-body * {
-  overflow: hidden;
+body {
+  overflow-x: hidden;
 }
 #root {
   overflow-x: hidden;

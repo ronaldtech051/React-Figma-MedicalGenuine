@@ -16,7 +16,7 @@ export default function Layout3() {
       <Flex
         className="wrapper"
         w={"100%"}
-        p={"160px 0px"}
+        p={{ xl: "160px", base: "20px" }}
         flexDir={"column"}
         alignItems={"flex-start"}
       >

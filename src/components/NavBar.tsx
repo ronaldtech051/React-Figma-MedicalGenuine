@@ -3,45 +3,50 @@ import {
   Box,
   Button,
   CloseButton,
-  Container,
   Flex,
   HStack,
+  Container,
   Heading,
   IconButton,
   VStack,
+  Collapse,
+  useDisclosure,
 } from "@chakra-ui/react";
-import { useState } from "react";
 
 export default function NavBar() {
-  const [MenuDisplay, MenuDisplaySetter] = useState("none");
-  const changer = (changedvalue: string) => {
-    if (changedvalue === "none") {
-      MenuDisplaySetter("flex");
-    } else MenuDisplaySetter("none");
-  };
+  const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Flex position={"relative"}>
-      <Container
+    <Container
+      position={{ base: "fixed", xl: "absolute" }}
+      minH={"20vh"}
+      zIndex={300}
+      overflowX={"hidden"}
+      className="nav-container"
+      maxW={"100%"}
+      minW={"100%"}
+      p={{ base: "0px 0px 0px 0px", xl: "0px 195px 0px 195px" }}
+    >
+      <Flex
         display={{
           base: "none",
-
           xl: "flex",
         }}
-        minW={"100%"}
-        maxH={"91px"}
-        marginLeft={"59px"}
-        marginRight={"59px"}
+        w={"100%"}
+        h={"100%"}
+        m={"0px 59px"}
       >
         <Flex
-          flexDir={{ base: "column", sm: "column", md: "row", lg: "row" }}
-          maxH={"91px"}
-          width={"100%"}
+          flexDir={{ base: "row", lg: "row" }}
+          h={"100%"}
+          w={"100%"}
           m={"0px 0px 0px 0px"}
-          alignItems={"flex-start"}
-          justifyContent={"flex-start"}
+          alignItems={"center"}
+          justifyContent={"space-between"}
         >
-          <Heading variant={"nav"}>MedicalGenuin</Heading>
+          <Heading w={"50%"} className="navLogo">
+            MedicalGenuin
+          </Heading>
           <Flex
             w={"100%"}
             flexDir={"row"}
@@ -49,12 +54,13 @@ export default function NavBar() {
             m={"0px px 0px 0px"}
             alignItems={"flex-start"}
             justifyContent={"flex-end"}
+            className="nav-menu"
           >
-            <Flex direction={"row"} w={"100%"}>
+            <Flex direction={"row"} w={"100%"} justify={"start"}>
               <Box
                 mt={4}
                 m=" 33px 0px 34px 44px"
-                fontSize={22}
+                fontSize={18}
                 fontWeight={700}
                 lineHeight={10}
                 letterSpacing={0.2}
@@ -64,7 +70,7 @@ export default function NavBar() {
               <Box
                 mt={4}
                 m=" 33px 0px 34px 21px"
-                fontSize={22}
+                fontSize={18}
                 fontWeight={700}
                 lineHeight={10}
                 letterSpacing={0.2}
@@ -74,7 +80,7 @@ export default function NavBar() {
               <Box
                 mt={4}
                 m=" 33px 0px 34px 21px"
-                fontSize={22}
+                fontSize={18}
                 fontWeight={700}
                 lineHeight={10}
                 letterSpacing={0.2}
@@ -84,7 +90,7 @@ export default function NavBar() {
               <Box
                 mt={4}
                 m=" 33px 0px 34px 21px"
-                fontSize={22}
+                fontSize={18}
                 fontWeight={700}
                 lineHeight={10}
                 letterSpacing={0.2}
@@ -92,22 +98,33 @@ export default function NavBar() {
                 Contact
               </Box>
             </Flex>
-            <HStack alignSelf={"flex-end"} w={"100%"}>
+          </Flex>
+          <Flex className="nav-buttons" w={"100%"} justifyContent={"center"}>
+            <HStack
+              alignItems={"center"}
+              w={"100%"}
+              spacing={"45px"}
+              justify={"end"}
+            >
               <Button
-                fontSize={22}
+                p={"15px 25px 15px 25px"}
+                size={"lg"}
+                h={"100%"}
+                fontSize={18}
                 fontWeight={700}
                 lineHeight={"22px"}
                 letterSpacing={0.2}
-                m="34px 0px 35px 240px"
               >
                 Login
               </Button>
               <Button
-                fontSize={22}
+                p={"15px 25px 15px 25px"}
+                h={"100%"}
+                size={"lg"}
+                fontSize={18}
                 fontWeight={700}
                 lineHeight={"22px"}
                 letterSpacing={0.2}
-                m=" 19px 220px 20px 45px"
                 rightIcon={<ArrowForwardIcon />}
                 backgroundColor={"#96BB7C"}
               >
@@ -116,7 +133,7 @@ export default function NavBar() {
             </HStack>
           </Flex>
         </Flex>
-      </Container>
+      </Flex>
       <Flex
         flexDir={"column"}
         display={{
@@ -126,106 +143,152 @@ export default function NavBar() {
         alignItems={"center"}
         justify={"flex-start"}
         w={"100vw"}
-        //h={"100vh"}
-        mt={3}
+        h={"100vh"}
+
+        //mt={3}
       >
         <Flex
           w={"100%"}
-          flex={"row"}
+          flexDir={"row"}
           justifyContent={"space-between"}
           alignItems={"center"}
+          flexShrink={0}
+          bgColor={"whiteAlpha.900"}
         >
-          <Heading m={2} lineHeight="32px" fontSize={22}>
-            MedicalGenuin
-          </Heading>
-          <IconButton
-            m={4}
-            aria-label="Open Menu"
-            size="lg"
-            icon={
-              MenuDisplay === "none" ? (
-                <HamburgerIcon />
-              ) : (
-                <CloseButton size={"lg"} />
-              )
-            }
-            alignSelf={"flex-end"}
-            onClick={() => changer(MenuDisplay)}
-          />
+          <Flex
+            flexDir={"row"}
+            w={"100%"}
+            justifyContent={"space-between"}
+            alignItems={"center"}
+            zIndex={222}
+          >
+            <Heading m={2} lineHeight="32px" color={"#252B42"} fontSize={22}>
+              MedicalGenuin
+            </Heading>
+            <IconButton
+              as={"div"}
+              m={4}
+              color={"#252B42"}
+              aria-label="Open Menu"
+              size="lg"
+              icon={!isOpen ? <HamburgerIcon /> : <CloseButton size={"lg"} />}
+              alignSelf={"flex-end"}
+              onClick={onToggle}
+            />
+          </Flex>
         </Flex>
-        <VStack
+        <Collapse
           className="responsive-nav"
-          bgColor={"#96bb7c2d"}
-          w={"100vw"}
-          h={"100%"}
-          display={MenuDisplay}
-          alignItems={"center"}
-          justify={"center"}
+          in={isOpen}
+          transition={{ exit: { delay: 0.3 }, enter: { duration: 0.5 } }}
         >
-          <Box
-            mt={4}
-            fontSize={22}
-            fontWeight={700}
-            lineHeight={10}
-            letterSpacing={0.2}
-            h={"20"}
+          <Flex
+            overflowY={"hidden"}
+            bg={"whiteAlpha.800"}
+            w={"100vw"}
+            h={"40vh"}
+            brightness={"20%"}
+            flexDir={"column"}
+            alignItems={"flex-start"}
+            justifyContent={"flex-start"}
           >
-            Home
-          </Box>
-          <Box
-            mt={4}
-            fontSize={22}
-            fontWeight={700}
-            lineHeight={10}
-            letterSpacing={0.2}
-            h={"20"}
-          >
-            Product
-          </Box>
-          <Box
-            mt={4}
-            fontSize={22}
-            fontWeight={700}
-            lineHeight={10}
-            letterSpacing={0.2}
-            h={"20"}
-          >
-            Pricing
-          </Box>
-          <Box
-            mt={4}
-            fontSize={22}
-            fontWeight={700}
-            lineHeight={10}
-            letterSpacing={0.2}
-            h={"20"}
-          >
-            Contact
-          </Box>
-          <Box mt={4} h={"20"}>
-            <Button
-              fontSize={22}
-              fontWeight={700}
-              lineHeight={"22px"}
-              letterSpacing={0.2}
-            >
-              Login
-            </Button>
-          </Box>
-          <Box mt={4} h={"20"}>
             <Box
+              borderBottom={"1px solid grey"}
               mt={4}
+              pl={"10"}
+              w={"100%"}
               fontSize={22}
               fontWeight={700}
-              lineHeight={"22px"}
+              color={"#252B42"}
+              lineHeight={10}
               letterSpacing={0.2}
-              backgroundColor={"#96BB7C"}
+              h={"10"}
             >
-              JOIN US <ArrowForwardIcon />
+              Home
             </Box>
-          </Box>
-        </VStack>
+            <Box
+              borderBottom={"1px solid grey"}
+              mt={4}
+              pl={"10"}
+              w={"100%"}
+              fontSize={22}
+              fontWeight={700}
+              lineHeight={10}
+              letterSpacing={0.2}
+              h={"10"}
+              color={"#252B42"}
+            >
+              Product
+            </Box>
+            <Box
+              borderBottom={"1px solid grey"}
+              mt={4}
+              pl={"10"}
+              w={"100%"}
+              fontSize={22}
+              fontWeight={700}
+              lineHeight={10}
+              letterSpacing={0.2}
+              h={"10"}
+              color={"#252B42"}
+            >
+              Pricing
+            </Box>
+            <Box
+              borderBottom={"1px solid grey"}
+              mt={4}
+              pl={"10"}
+              w={"100%"}
+              fontSize={22}
+              fontWeight={700}
+              lineHeight={10}
+              letterSpacing={0.2}
+              color={"#252B42"}
+              h={"10"}
+            >
+              Contact
+            </Box>
+
+            <Box mt={4} w={"100%"} h={"20"}>
+              <VStack
+                alignItems={"flex-start"}
+                w={"100%"}
+                spacing={"10px"}
+                justify={"end"}
+                ml={"10"}
+              >
+                <Button
+                  fontSize={22}
+                  p={"15px 25px 15px 25px"}
+                  fontWeight={700}
+                  lineHeight={"22px"}
+                  letterSpacing={0.2}
+                  color={"#252B42"}
+                  h={"100%"}
+                  size={"lg"}
+                  shadow={"md"}
+                >
+                  Login
+                </Button>
+
+                <Button
+                  p={"15px 25px 15px 25px"}
+                  h={"100%"}
+                  size={"lg"}
+                  fontSize={18}
+                  fontWeight={700}
+                  lineHeight={"22px"}
+                  letterSpacing={0.2}
+                  rightIcon={<ArrowForwardIcon />}
+                  backgroundColor={"#96BB7C"}
+                >
+                  JOIN US
+                </Button>
+              </VStack>
+            </Box>
+          </Flex>
+        </Collapse>
       </Flex>
-    </Flex>
+    </Container>
   );
 }
