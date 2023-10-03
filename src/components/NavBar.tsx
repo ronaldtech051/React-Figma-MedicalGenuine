@@ -186,7 +186,7 @@ export default function NavBar() {
             overflowY={"hidden"}
             bg={"whiteAlpha.800"}
             w={"100vw"}
-            h={"40vh"}
+            h={"52vh"}
             brightness={"20%"}
             flexDir={"column"}
             alignItems={"flex-start"}

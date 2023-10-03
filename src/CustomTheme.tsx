@@ -41,6 +41,7 @@ const theme = extendTheme({
         color: "#ffffff",
         overflowY: "hidden",
         fontSize: "xl",
+        whiteSpace: "initial",
         fontWeight: "400",
         height: "auto",
         lineHeight: "24px",

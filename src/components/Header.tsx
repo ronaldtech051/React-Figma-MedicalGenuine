@@ -18,7 +18,7 @@ function Header() {
       bgRepeat={"no-repeat"}
       bgPosition={"center"}
       bgSize={"cover"}
-      sx={{ Tran: " rgba(0, 0, 0, 0.644); " }}
+      //sx={{ Tran: " rgba(0, 0, 0, 0.644); " }}
       flexShrink={0}
     >
       <Flex
@@ -35,7 +35,9 @@ function Header() {
         <Flex
           position={"relative"}
           overflowY={"hidden"}
-          w={"699px"}
+          overflowX={"hidden"}
+          wrap={"wrap"}
+          w={{ base: "100%", xl: "699px" }}
           h={"100%"}
           top={{ base: "0", xl: "200" }}
           flexDir={"column"}
@@ -46,7 +48,7 @@ function Header() {
             "0px 195px 7px 195px",
           ]}
           p={{
-            base: "20vh 0px 10px 0px",
+            base: "20vh 4px 10px 4px",
             md: "0px 5px 112px 5px",
             lg: "112px 0px",
             xl: "112px 0px",
@@ -57,14 +59,15 @@ function Header() {
           <Text variant={"green"} fontSize={"2xl"}>
             Join us
           </Text>
-          <Heading variant={"header-big"} fontSize={{ base: "7xl", xl: "7xl" }}>
+          <Heading variant={"header-big"} fontSize={{ base: "3xl", xl: "7xl" }}>
             Meet The Best Hospital
           </Heading>
           <Heading
             variant={"header-small"}
             fontSize={{ base: "xl", xl: "3xl" }}
+            overflowY={"hidden"}
           >
-            We are always focused on helping your child and you
+            We are always fully focused on helping your child and you
           </Heading>
           <Button
             p={"15px 25px 15px 25px"}

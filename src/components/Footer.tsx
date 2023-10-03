@@ -21,7 +21,7 @@ export default function Footer() {
         >
           <Flex
             flexDir={"row"}
-            gap={"30px"}
+            gap={"80px"}
             alignItems={"flex-start"}
             justify={"center"}
             wrap={"wrap"}

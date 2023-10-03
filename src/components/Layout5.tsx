@@ -26,7 +26,7 @@ export default function Layout5() {
         justifyContent={"flex-start"}
         alignItems={"flex-start"}
         bgColor={"#2D4059"}
-        gap={"80px"}
+        gap={{ base: "0", xl: "80" }}
       >
         <Flex
           flexDir={"column"}
@@ -278,6 +278,7 @@ export default function Layout5() {
               w={{ base: "100%" }}
             >
               <Flex
+                position={"relative"}
                 className="inner-card"
                 borderRadius={"4px"}
                 p={"50px 40px"}
@@ -292,8 +293,15 @@ export default function Layout5() {
                   justifyContent={"center"}
                   position={"absolute"}
                   w={"100%"}
-                  overflowX={"hidden"}
-                  top={{ xl: "5000", base: "9220" }}
+                  left={{
+                    base: "0",
+                    sm: "0",
+                    md: "275",
+                    lg: "370",
+                    xl: "-10",
+                    "2xl": "0",
+                  }}
+                  top={"-10"}
                   className="new box"
                 >
                   <Flex

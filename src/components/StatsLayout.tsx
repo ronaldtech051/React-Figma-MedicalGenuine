@@ -26,6 +26,7 @@ export default function StatsLayout() {
             className="flex-item"
             w={"238px"}
             flexDir={"column"}
+            gap={8}
             alignItems={"center"}
           >
             <Text
@@ -41,6 +42,7 @@ export default function StatsLayout() {
           <Flex
             className="flex-item"
             w={"238px"}
+            gap={8}
             flexDir={"column"}
             alignItems={"center"}
           >
@@ -58,6 +60,7 @@ export default function StatsLayout() {
             className="flex-item"
             w={"238px"}
             flexDir={"column"}
+            gap={8}
             alignItems={"center"}
           >
             <Text
@@ -72,6 +75,7 @@ export default function StatsLayout() {
           </Flex>
           <Flex
             className="flex-item"
+            gap={8}
             w={"238px"}
             flexDir={"column"}
             alignItems={"center"}

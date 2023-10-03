@@ -17,11 +17,11 @@ export default function Layout4() {
     >
       <Flex
         className="Container"
-        p={"160px 0px"}
+        p={{ xl: "160px", base: "20px" }}
         w={"100%"}
         flexDir={"column"}
         alignItems={"center"}
-        gap={80}
+        gap={{ base: "20", xl: "80" }}
         flexShrink={0}
       >
         <Flex

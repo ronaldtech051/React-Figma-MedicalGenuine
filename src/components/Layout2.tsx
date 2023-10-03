@@ -47,7 +47,7 @@ function Layout2() {
           >
             {" "}
             <Flex
-              w={"400px"}
+              w={{ base: "300px", sm: "400px", xl: "400px" }}
               h={{ base: "auto", xl: "688.706px" }}
               flexDir={"column"}
               alignItems={"flex-start"}
@@ -103,7 +103,7 @@ function Layout2() {
               </Flex>
               <Flex
                 className="card"
-                w={"400px"}
+                w={{ base: "300px", sm: "400px", xl: "400px" }}
                 p={"35px 40px"}
                 flexDir={"column"}
                 alignItems={"flex-start"}
@@ -210,7 +210,7 @@ function Layout2() {
               </Flex>
             </Flex>
             <Flex
-              w={"400px"}
+              w={{ base: "300px", sm: "400px", xl: "400px" }}
               h={{ base: "auto", xl: "688.706px" }}
               pt={{ base: "auto", xl: "48px" }}
               flexDirection={"column"}
@@ -221,7 +221,7 @@ function Layout2() {
               {" "}
               <Flex
                 className="card"
-                w={"400px"}
+                w={{ base: "300px", sm: "400px", xl: "400px" }}
                 p={"35px 40px"}
                 flexDir={"column"}
                 alignItems={"flex-start"}
