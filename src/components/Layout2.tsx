@@ -45,7 +45,6 @@ function Layout2() {
             gap={"30px"}
             flexDir={{ base: "column", lg: "row" }}
           >
-            {" "}
             <Flex
               w={{ base: "300px", sm: "400px", xl: "400px" }}
               h={{ base: "auto", xl: "688.706px" }}
@@ -98,7 +97,7 @@ function Layout2() {
                 <Text variant={"dark-blue"}>Quick Examination</Text>
                 <Box bgColor={"#FF7171"} h={"2px"} w={"50px"}></Box>
                 <Text variant={"grey"}>
-                  The gradual accumulation of information about{" "}
+                  The gradual accumulation of information about
                 </Text>
               </Flex>
               <Flex
@@ -205,7 +204,7 @@ function Layout2() {
                 <Text variant={"dark-blue"}>Best dental surgeons</Text>
                 <Box bgColor={"#FF7171"} h={"2px"} w={"50px"}></Box>
                 <Text variant={"grey"}>
-                  The gradual accumulation of information about{" "}
+                  The gradual accumulation of information about
                 </Text>
               </Flex>
             </Flex>
@@ -218,7 +217,6 @@ function Layout2() {
               alignItems={"center"}
               gap={"24px"}
             >
-              {" "}
               <Flex
                 className="card"
                 w={{ base: "300px", sm: "400px", xl: "400px" }}
@@ -274,7 +272,7 @@ function Layout2() {
                 <Text variant={"dark-blue"}>Quick Examination</Text>
                 <Box bgColor={"#FF7171"} h={"2px"} w={"50px"}></Box>
                 <Text variant={"grey"}>
-                  The gradual accumulation of information about{" "}
+                  The gradual accumulation of information about
                 </Text>
               </Flex>
             </Flex>

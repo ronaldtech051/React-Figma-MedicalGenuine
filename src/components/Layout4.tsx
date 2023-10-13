@@ -7,7 +7,7 @@ import { ChevronRightIcon } from "@chakra-ui/icons";
 export default function Layout4() {
   return (
     <Flex
-      className="department-layout"
+      className="department-container"
       w={"100%"}
       p={{ base: "0px 30px 5px 30px", xl: "0px 195px 50.593px 195px" }}
       justifyContent={"center"}
@@ -16,13 +16,13 @@ export default function Layout4() {
       flexShrink={0}
     >
       <Flex
-        className="Container"
-        p={{ xl: "160px", base: "20px" }}
+        className="wrapper"
+        p={{ xl: "120px", base: "20px" }}
         w={"100%"}
         flexDir={"column"}
         alignItems={"center"}
-        gap={{ base: "20", xl: "80" }}
         flexShrink={0}
+        gap={10}
       >
         <Flex
           className="row1"
@@ -34,13 +34,13 @@ export default function Layout4() {
             flexDir={"column"}
             alignItems={"flex-start"}
             gap={10}
-            w={"691px"}
+            w={{ base: "auto", xl: "691px" }}
           >
             <Text variant={"green"}>Practice Advice</Text>
             <Heading>Our Department</Heading>
             <Text>
               Problems trying to resolve the conflict between the two major
-              realms of Classical physics: Newtonian mechanics{" "}
+              realms of Classical physics: Newtonian mechanics
             </Text>
           </Flex>
         </Flex>
@@ -79,7 +79,6 @@ export default function Layout4() {
                   m={"236px 204px 24px 104px"}
                   position={"absolute"}
                 >
-                  {" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="21"
@@ -107,7 +106,6 @@ export default function Layout4() {
                   m={"236px 154px 24px 154px"}
                   position={"absolute"}
                 >
-                  {" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="21"
@@ -145,7 +143,6 @@ export default function Layout4() {
                   m={"236px 104px 24px 204px"}
                   position={"relative"}
                 >
-                  {" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="21"
@@ -327,7 +324,6 @@ export default function Layout4() {
                   m={"236px 204px 24px 104px"}
                   position={"absolute"}
                 >
-                  {" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="21"
@@ -355,7 +351,6 @@ export default function Layout4() {
                   m={"236px 154px 24px 154px"}
                   position={"absolute"}
                 >
-                  {" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="21"
@@ -393,7 +388,6 @@ export default function Layout4() {
                   m={"236px 104px 24px 204px"}
                   position={"relative"}
                 >
-                  {" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="21"
@@ -638,7 +632,6 @@ export default function Layout4() {
                   m={"236px 104px 24px 204px"}
                   position={"relative"}
                 >
-                  {" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="21"

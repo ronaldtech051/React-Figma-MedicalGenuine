@@ -13,7 +13,7 @@ import { MdCheckCircle } from "react-icons/md";
 export default function Layout5() {
   return (
     <Flex
-      w={"100%"}
+      className="pricing-container"
       p={{ base: "0px 30px 5px 30px", xl: "0px 195px 50.593px 195px" }}
       justifyContent={"center"}
       alignItems={"center"}
@@ -21,24 +21,23 @@ export default function Layout5() {
     >
       <Flex
         w={"100%"}
-        p={"160px 0px"}
+        className="wrapper"
+        p={{ xl: "100px", base: "20px" }}
         flexDir={"column"}
-        justifyContent={"flex-start"}
         alignItems={"flex-start"}
         bgColor={"#2D4059"}
-        gap={{ base: "0", xl: "80" }}
       >
         <Flex
           flexDir={"column"}
           alignItems={"flex-start"}
-          justifyContent={"flex-start"}
-          gap={"10px"}
+          gap={5}
+          w={{ base: "auto", xl: "691px" }}
         >
           <Text variant={"green"}>Practice Advice</Text>
-          <Heading>Our Department</Heading>
+          <Heading>Pricing</Heading>
           <Text>
             Problems trying to resolve the conflict between the two major realms
-            of Classical physics: Newtonian mechanics{" "}
+            of Classical physics: Newtonian mechanics
           </Text>
         </Flex>
 
@@ -65,7 +64,6 @@ export default function Layout5() {
               alignItems={"center"}
               w={{ base: "100%" }}
             >
-              {" "}
               <Flex
                 className="inner-card"
                 borderRadius={"4px"}
@@ -76,7 +74,6 @@ export default function Layout5() {
                 gap={"35px"}
                 bgColor={"#fff"}
               >
-                {" "}
                 <Box
                   w={"96px"}
                   height={"96px"}
@@ -100,7 +97,9 @@ export default function Layout5() {
                   </svg>
                 </Box>
                 <Heading color={"#252B42"}>FREE</Heading>
-                <Text variant={"grey"}>Organize across all apps by hand</Text>
+                <Text variant={"grey"} textAlign={"center"}>
+                  Organize across all apps by hand
+                </Text>
                 <Heading
                   color={"#96BB7C"}
                   fontSize={"40px"}
@@ -111,7 +110,7 @@ export default function Layout5() {
                   19$
                 </Heading>
                 <Text color={"#8EC2F2"}>Per Month</Text>
-                <Text variant={"grey"}>
+                <Text variant={"grey"} textAlign={"center"}>
                   Slate helps you see how many more days you need...
                 </Text>
                 <Button
@@ -171,7 +170,6 @@ export default function Layout5() {
               alignItems={"center"}
               w={{ base: "100%" }}
             >
-              {" "}
               <Flex
                 className="inner-card"
                 borderRadius={"4px"}
@@ -182,7 +180,6 @@ export default function Layout5() {
                 gap={"35px"}
                 bgColor={"#2A7CC7"}
               >
-                {" "}
                 <Box
                   w={"96px"}
                   height={"96px"}
@@ -206,7 +203,7 @@ export default function Layout5() {
                   </svg>
                 </Box>
                 <Heading>FREE</Heading>
-                <Text alignSelf={"center"}>
+                <Text textAlign={"center"}>
                   Organize across all apps by hand
                 </Text>
                 <Heading
@@ -219,7 +216,7 @@ export default function Layout5() {
                   19$
                 </Heading>
                 <Text color={"#8EC2F2"}>Per Month</Text>
-                <Text alignSelf={"center"}>
+                <Text textAlign={"center"}>
                   Slate helps you see how many more days you need...
                 </Text>
                 <Button
@@ -345,10 +342,12 @@ export default function Layout5() {
                   </svg>
                 </Box>
                 <Heading color={"#252B42"}>FREE</Heading>
-                <Text variant={"grey"}>Organize across all apps by hand</Text>
+                <Text variant={"grey"} textAlign={"center"}>
+                  Organize across all apps by hand
+                </Text>
                 <Heading color={"#96BB7C"}>19$</Heading>
                 <Text color={"#8EC2F2"}>Per Month</Text>
-                <Text variant={"grey"}>
+                <Text variant={"grey"} textAlign={"center"}>
                   Slate helps you see how many more days you need...
                 </Text>
                 <Button

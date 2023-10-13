@@ -12,7 +12,6 @@ export default function Footer() {
         justifyContent={"center"}
         alignSelf={"stretch"}
       >
-        {" "}
         <Flex
           className="wrapper"
           p={"50px 0px"}
@@ -26,14 +25,12 @@ export default function Footer() {
             justify={"center"}
             wrap={"wrap"}
           >
-            {" "}
             <Flex
               className="inner-section"
               flexDir={"column"}
               alignItems={"flex-start"}
               gap={"20px"}
             >
-              {" "}
               <Text variant={"dark-blue"}>Company Info</Text>
               <Text variant={"grey"} fontWeight={700}>
                 About Us
@@ -54,7 +51,6 @@ export default function Footer() {
               alignItems={"flex-start"}
               gap={"20px"}
             >
-              {" "}
               <Text variant={"dark-blue"}>Legal</Text>
               <Text variant={"grey"} fontWeight={700}>
                 About Us
@@ -75,7 +71,6 @@ export default function Footer() {
               alignItems={"flex-start"}
               gap={"20px"}
             >
-              {" "}
               <Text variant={"dark-blue"}>Features</Text>
               <Text variant={"grey"} fontWeight={700}>
                 Business Marketing
@@ -96,7 +91,6 @@ export default function Footer() {
               alignItems={"flex-start"}
               gap={"20px"}
             >
-              {" "}
               <Text variant={"dark-blue"}>Resources</Text>
               <Text variant={"grey"} fontWeight={700}>
                 IOS & Android
@@ -132,7 +126,6 @@ export default function Footer() {
                   />
                 </svg>
                 <Text variant={"grey"} fontWeight={700}>
-                  {" "}
                   (480) 555-0103
                 </Text>
               </Flex>
@@ -160,8 +153,7 @@ export default function Footer() {
                     </clipPath>
                   </defs>
                 </svg>
-                <Text variant={"grey"} fontWeight={700}>
-                  {" "}
+                <Text variant={"grey"} fontWeight={700} w={60}>
                   4517 Washington Ave. Manchester, Kentucky 39495
                 </Text>
               </Flex>
@@ -209,7 +201,7 @@ export default function Footer() {
         wrap={"wrap"}
       >
         <Text variant={"grey"} fontWeight={700}>
-          Made With Love By Figmaland All Right Reserved{" "}
+          Made With Love By Figmaland All Right Reserved
         </Text>
         <Flex gap={"20px"} justifyContent={"center"} alignItems={"center"}>
           <svg

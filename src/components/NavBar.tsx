@@ -25,7 +25,7 @@ export default function NavBar() {
       className="nav-container"
       maxW={"100%"}
       minW={"100%"}
-      p={{ base: "0px 0px 0px 0px", xl: "0px 195px 0px 195px" }}
+      p={{ base: "0px 0px 0px 0px", xl: "0px 150px 0px 150px" }}
     >
       <Flex
         display={{
@@ -34,7 +34,6 @@ export default function NavBar() {
         }}
         w={"100%"}
         h={"100%"}
-        m={"0px 59px"}
       >
         <Flex
           flexDir={{ base: "row", lg: "row" }}
@@ -43,8 +42,9 @@ export default function NavBar() {
           m={"0px 0px 0px 0px"}
           alignItems={"center"}
           justifyContent={"space-between"}
+          flexWrap={"nowrap"}
         >
-          <Heading w={"50%"} className="navLogo">
+          <Heading w={"76%"} className="navLogo" display={"inline"}>
             MedicalGenuin
           </Heading>
           <Flex
@@ -153,7 +153,7 @@ export default function NavBar() {
           justifyContent={"space-between"}
           alignItems={"center"}
           flexShrink={0}
-          bgColor={"whiteAlpha.900"}
+          bgColor={"whitesmoke"}
         >
           <Flex
             flexDir={"row"}
@@ -184,9 +184,12 @@ export default function NavBar() {
         >
           <Flex
             overflowY={"hidden"}
-            bg={"whiteAlpha.800"}
+            bg={"whiteAlpha.900"}
+            overflowX={"hidden"}
             w={"100vw"}
             h={"52vh"}
+            mt={"1px"}
+            pl={2}
             brightness={"20%"}
             flexDir={"column"}
             alignItems={"flex-start"}

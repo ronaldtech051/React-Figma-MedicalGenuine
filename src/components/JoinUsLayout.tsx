@@ -18,7 +18,6 @@ export default function JoinUsLayout() {
       alignItems={"center"}
       bgColor={"#2D4059"}
     >
-      {" "}
       <Flex
         className="wrapper"
         w={"100%"}
@@ -33,12 +32,11 @@ export default function JoinUsLayout() {
           gap={"10px"}
           alignItems={"center"}
         >
-          {" "}
           <Text variant={"green"}>NewsLetter</Text>
           <Heading>JOIN US</Heading>
           <Text>
             Problems trying to resolve the conflict between the two major realms
-            of Classical physics: Newtonian mechanics{" "}
+            of Classical physics: Newtonian mechanics
           </Text>
         </Flex>
         <Flex maxW={"688px"} h={"60px"} w={"100%"}>

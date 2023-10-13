@@ -10,7 +10,6 @@ export default function Testimonials() {
       alignItems={"center"}
       bgColor={"#2D4059"}
     >
-      {" "}
       <Flex
         p={"160px 0px"}
         flexDir={"column"}
@@ -18,14 +17,12 @@ export default function Testimonials() {
         alignItems={"flex-start"}
         justifyContent={"center"}
       >
-        {" "}
         <Flex
           flexDir={"column"}
           alignItems={"flex-start"}
           justifyContent={"flex-start"}
           gap={"10px"}
         >
-          {" "}
           <Text variant={"green"}>Practice Advice</Text>
           <Heading>Each and every client is important</Heading>
           <Text>
@@ -40,7 +37,6 @@ export default function Testimonials() {
           alignItems={"flex-start"}
           justifyContent={"center"}
         >
-          {" "}
           <Flex
             className="testimonial-card"
             p={"25px"}
@@ -49,7 +45,6 @@ export default function Testimonials() {
             alignItems={"center"}
             bgColor={"#fff"}
           >
-            {" "}
             <Flex
               p={"30px"}
               flexDir={"column"}
@@ -125,7 +120,6 @@ export default function Testimonials() {
               </Text>
             </Flex>
             <Flex flexDir={"row"} h={"50px"} gap={"15px"} alignItems={"center"}>
-              {" "}
               <Avatar src={avatar1} />
               <Box ml={3}>
                 <Text variant={"green"} fontWeight={700}>
@@ -143,7 +137,6 @@ export default function Testimonials() {
             alignItems={"center"}
             bgColor={"#fff"}
           >
-            {" "}
             <Flex
               p={"30px"}
               flexDir={"column"}
@@ -219,7 +212,6 @@ export default function Testimonials() {
               </Text>
             </Flex>
             <Flex flexDir={"row"} h={"50px"} gap={"15px"} alignItems={"center"}>
-              {" "}
               <Avatar src={avatar2} />
               <Box ml={3}>
                 <Text variant={"green"} fontWeight={700}>
@@ -237,7 +229,6 @@ export default function Testimonials() {
             alignItems={"center"}
             bgColor={"#fff"}
           >
-            {" "}
             <Flex
               p={"30px"}
               flexDir={"column"}
@@ -313,7 +304,6 @@ export default function Testimonials() {
               </Text>
             </Flex>
             <Flex flexDir={"row"} h={"50px"} gap={"15px"} alignItems={"center"}>
-              {" "}
               <Avatar src={avatar3} />
               <Box ml={3}>
                 <Text variant={"green"} fontWeight={700}>

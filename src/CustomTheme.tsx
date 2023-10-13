@@ -46,6 +46,7 @@ const theme = extendTheme({
         height: "auto",
         lineHeight: "24px",
         letterSpacing: "0.2px",
+        textOverFlow: "ellipsis",
       },
       variants: {
         green: {

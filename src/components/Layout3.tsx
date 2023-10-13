@@ -6,13 +6,12 @@ import { ChevronRightIcon } from "@chakra-ui/icons";
 export default function Layout3() {
   return (
     <Flex
-      className="section3-container"
+      className="meet-our-experts-container"
       p={{ base: "0px 5px 5px 5px", xl: "0px 195px 50.593px 195px" }}
       justifyContent={"center"}
       alignItems={"center"}
       bgColor={"#2D4059"}
     >
-      {" "}
       <Flex
         className="wrapper"
         w={"100%"}
@@ -92,8 +91,8 @@ export default function Layout3() {
             </Heading>
             <Text lineHeight={"20px"}>
               Problems trying to resolve the conflict between the two major
-              realms of Classical physics: Newtonian mechanics{" "}
-            </Text>{" "}
+              realms of Classical physics: Newtonian mechanics
+            </Text>
             <Text variant={"green"}>
               Learn more <ChevronRightIcon />
             </Text>

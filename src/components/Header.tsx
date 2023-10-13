@@ -18,7 +18,6 @@ function Header() {
       bgRepeat={"no-repeat"}
       bgPosition={"center"}
       bgSize={"cover"}
-      //sx={{ Tran: " rgba(0, 0, 0, 0.644); " }}
       flexShrink={0}
     >
       <Flex
@@ -28,8 +27,9 @@ function Header() {
         w={"100%"}
         minH={"100vh"}
         m={"0px 0px 0px 0px"}
-        className="aaa"
+        className="wrapper"
         overflowY={"hidden"}
+        justify={"center"}
         align={"center"}
       >
         <Flex
@@ -41,15 +41,16 @@ function Header() {
           h={"100%"}
           top={{ base: "0", xl: "200" }}
           flexDir={"column"}
-          m={[
-            "0px 0px 7px 0px",
-            "0px 0px 7px 0px",
-            "0px 195px 7px 195px",
-            "0px 195px 7px 195px",
-          ]}
+          m={{
+            base: "0px 0px 7px 0px",
+            sm: "0px 0px 7px 0px",
+            md: "0px 0px 7px 0px",
+            lg: "0px 195px 7px 195px",
+            xl: "-300px 195px 7px 195px",
+          }}
           p={{
             base: "20vh 4px 10px 4px",
-            md: "0px 5px 112px 5px",
+            md: "90px 5px 112px 5px",
             lg: "112px 0px",
             xl: "112px 0px",
           }}
